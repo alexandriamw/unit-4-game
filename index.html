@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector!</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito|Red+Hat+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <h1>Crystals Collector!</h1>
+    <section>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</p>
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score
+            goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </section>
+
+    <div class="random-number">
+        <p>Random number:</p>
+    </div>
+
+    <div>
+        <p class="wins">Wins:</p>
+        <br>
+        <p class="losses">Losses:</p>
+    </div>
+
+    <img src="assets/images/diamond.png" alt="Minecraft diamond">
+    <img src="assets/images/emerald.png" alt="Minecraft emerald">
+    <img src="assets/images/lapis.png" alt="Minecraft lapis">
+    <img class="redstone" src="assets/images/redstone.png" alt="Minecraft redstone">
+
+    <div class="total-score">
+        <p>Your total score is:</p>
+    </div>
+
+    <div class="total-score">
+        <p>0</p>
+    </div>
 
     <script src="assets/javascript/game.js">
     </script>
 </body>
+
 </html>
